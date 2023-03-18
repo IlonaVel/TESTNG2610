@@ -17,15 +17,15 @@ public class BaseClass {
 
     }
 
-    @AfterClass
-    public static void after() {
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-        System.out.println("AFTER BASECLASS");
-//        System.out.println(driver.getCurrentUrl());
-        driver.quit();
-    }
+//    @AfterClass
+//    public static void after() {
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
+//  //      System.out.println("AFTER BASECLASS");
+////        System.out.println(driver.getCurrentUrl());
+//        driver.quit();
+//    }
 }
