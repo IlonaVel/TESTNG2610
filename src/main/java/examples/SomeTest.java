@@ -1,6 +1,6 @@
 package examples;
 
-import Config.BaseClass;
+import configuretions.BaseClass;
 import org.testng.annotations.Test;
 
 public class SomeTest extends BaseClass {
