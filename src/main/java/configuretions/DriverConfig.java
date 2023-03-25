@@ -1,7 +1,4 @@
 package configuretions;
-
-
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -33,13 +30,11 @@ public class DriverConfig {
 
     private static void createChrome() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--incognito");
+        options.addArguments("--start-maximized");
+        options.addArguments("--remote-allow-origins=*");
 //            options.addArguments("--headless");
         driver = new ChromeDriver(options);
 
-
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
     private static void ctreateFirefox() {
