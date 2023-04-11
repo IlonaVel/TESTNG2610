@@ -25,11 +25,12 @@ public class TestCourse15 extends BaseClass {
 //    }
 
 
+
     @Test
     public void test1() {
         FormPage15 formPage15 = PageFactory.initElements(driver, FormPage15.class);
         driver.get("https://ithillel.ua/");
-        formPage15.getcourse();
+        System.out.println(formPage15.getcourse());
         formPage15.buttoncourse.click();
     }
 
@@ -37,7 +38,10 @@ public class TestCourse15 extends BaseClass {
     public void test2(String item, List<String> expected) {
         FormPage15 formPage15 = PageFactory.initElements(driver, FormPage15.class);
         formPage15.putCourseName15(CourseNames15.QA);
-        //Assert.assertTrue(formPage15.getcourse(), );
+            //List<String> actual=FormPage15.getCourseList(item);
+            //Assert.assertEquals(expected,actual);
+
+
     }
 }
 

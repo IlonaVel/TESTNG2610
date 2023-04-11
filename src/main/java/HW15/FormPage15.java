@@ -15,7 +15,8 @@ import java.util.List;
 public class FormPage15 {
     @FindBy(xpath="//button[@class='site-nav-link' and contains (text(), 'Курси')]")
     WebElement buttoncourse;
-    @FindBy(xpath="//div[contains(@class, 'search-field') and contains(@id, 'coursesMenuSearchField' )]")
+    //@FindBy(xpath="//div[contains(@class, 'search-field') and contains(@id, 'coursesMenuSearchField' )]")
+    @FindBy(xpath="//*[@id=\"coursesMenuSearchField\"]/input")
     WebElement searchcourse;
 
     @FindBy(xpath="//button[contains(@class, 'cats-list_btn -recommendation -active')]")
@@ -34,6 +35,7 @@ public class FormPage15 {
     public void putCourseName15(CourseNames15 courseNames15) {
         reccomend.sendKeys(Keys.PAGE_UP);
         searchcourse.sendKeys(Keys.ENTER);
+        //searchcourse.click();
         searchcourse.sendKeys(courseNames15.getCourseName());
     }
 
