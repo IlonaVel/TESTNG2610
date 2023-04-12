@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class TestSearch  extends BaseClass {
+public class TestSearch1 extends BaseClass {
     HillelMainPage hillelMainPage;
     @BeforeClass
     public void b(){
